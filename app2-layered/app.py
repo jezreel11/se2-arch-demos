@@ -30,7 +30,7 @@ TEMPLATE = """
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>TaskFlow</title>
+  <title>TaskFlows</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: Arial, sans-serif; background: #f0f2f5; padding: 32px 16px; color: #222; }
@@ -80,7 +80,7 @@ TEMPLATE = """
 </head>
 <body>
 <div class="wrap">
-  <h1>TaskFlow <span class="badge-layer">v2 layered</span></h1>
+  <h1>Welcome to TaskFlow <span class="badge-layer">v2 layered</span></h1>
   <p class="sub">Same features as v1. Different inside.</p>
 
   <!-- Architecture note — visible during demo -->
@@ -198,6 +198,7 @@ def delete_task(task_id):
 
 
 # ── Run ───────────────────────────────────────────────────────
+import os
 
 if __name__ == "__main__":
     print("\n  TaskFlow v2 running  →  http://localhost:5000\n")
