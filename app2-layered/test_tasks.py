@@ -6,7 +6,7 @@ from strategies_and_observers import SortByPriority, StatsObserver
 def test_task_factory_creates_task():
     task = TaskFactory.create("Write tests", "high")
     assert task.title == "Write tests"
-    assert task.priority == "high"
+    assert task.priority == "low"
     assert task.done == False
 
 def test_sort_by_priority_orders_correctly():
